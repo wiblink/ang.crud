@@ -1,0 +1,10 @@
+{
+  "cars":[
+    {
+      "id":1,
+      "name":"BMW",
+      "quantity":5,
+      "price":200
+    }
+  ]
+}
