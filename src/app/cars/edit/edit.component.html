@@ -1,0 +1,32 @@
+<div class="container">
+    <legend>Edit Item Car</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txname" class="form-label">Name</label>
+            <input type="text" class="form-control" 
+            id="txname" name="carname" 
+            aria-describedby="emailHelp"
+            [(ngModel)] = "carsForm.name"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="txquan" class="form-label">Quantity</label>
+            <input type="number" class="form-control" 
+            id="txquan" name="quantity" 
+            aria-describedby="emailHelp"
+            [(ngModel)] = "carsForm.quantity"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="txprice" class="form-label">Price</label>
+            <input type="number" class="form-control"
+            id="txprice" name="price" 
+            aria-describedby="emailHelp"
+            [(ngModel)] = "carsForm.price"
+            />
+          </div>
+         
+       
+        <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+      </form>
+</div>
